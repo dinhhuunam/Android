@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="8dp"
+    android:gravity="center"
+    android:background="#e2e3eb">
+
+
+    <TextView
+        android:id="@+id/textview"
+        android:text="Đăng nhập"
+
+        android:layout_centerHorizontal="true"
+        android:textSize="20sp"
+        android:textAllCaps="true"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/username"
+        android:hint="Username"
+        android:layout_below="@id/textview"
+        android:layout_marginTop="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:id="@+id/password"
+        android:hint="passwords"
+        android:inputType="textPassword"
+        android:layout_below="@+id/username"
+        android:layout_marginTop="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <Button
+        android:id="@+id/btnLogin"
+
+        android:layout_below="@id/password"
+        android:layout_toLeftOf="@id/recoverypassword"
+
+        android:text="Đăng nhập"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <Button
+        android:id="@+id/recoverypassword"
+        android:text="Quyên MK"
+
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/password"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/help"
+        android:text="Trợ giúp"
+
+        android:layout_below="@id/password"
+        android:layout_toRightOf="@id/recoverypassword"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>
