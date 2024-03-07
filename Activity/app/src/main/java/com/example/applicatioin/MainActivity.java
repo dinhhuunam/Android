@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.RadioButton;
@@ -18,10 +19,16 @@ public class MainActivity extends AppCompatActivity {
     private Spinner sp1;
     private TextView kq;
     private Button btn;
+    private Spinner sp;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        sp=findViewById(R.id.sp2);
+        String[] list = {"PTIT","HUST","NEU","FTU"};
+        ArrayAdapter<String> adapter = new ArrayAdapter<>(this,R.layout.item,list);
+        sp.setAdapter(adapter);
+
         initView();
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
