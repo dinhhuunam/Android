@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="8">
+        <!--        <ImageView-->
+        <!--            android:layout_width="80dp"-->
+        <!--            android:layout_height="80dp"-->
+        <!--            android:layout_weight="2"-->
+        <!--            android:id="@+id/img"-->
+        <!--            android:src="@drawable/maybay"-->
+        <!--            />-->
+        <TextView
+            android:id="@+id/tvName"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_weight="2"
+            android:text="ten sach"
+            android:layout_gravity="center" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:orientation="vertical">
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Khoa hoc"
+                android:id="@+id/cb1"
+                />
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tieu thuyet"
+                android:id="@+id/cb2"
+                />
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Thieu nhi"
+                android:id="@+id/cb3"
+                />
+        </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="2"
+            android:id="@+id/tvNXB"
+            android:hint="Enter nxb"
+            />
+        <Button
+            android:id="@+id/btRemove"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:text="Remove"
+            android:textSize="12dp" />
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

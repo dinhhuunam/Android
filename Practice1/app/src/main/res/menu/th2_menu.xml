@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/mListView"
+        android:title="DANH SACH"
+        android:icon="@drawable/ic_view_list"/>
+    <item android:id="@+id/mInfo"
+        android:title="THONG TIN"
+        android:icon="@drawable/ic_info"/>
+    <item android:id="@+id/mSearch"
+        android:title="TIM KIEM VA THONG KE"
+        android:icon="@drawable/ic_search"/>
+</menu>

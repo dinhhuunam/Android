@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:weightSum="10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/item_img"
+            android:src="@drawable/plane"
+            android:layout_weight="2"
+            android:layout_width="60dp"
+            android:layout_height="60dp"/>
+
+<!--        <ImageView-->
+<!--            android:layout_width="80dp"-->
+<!--            android:layout_height="80dp"-->
+<!--            android:id="@+id/idCard"-->
+<!--            android:layout_weight="2"/>-->
+
+<!--        <ImageView-->
+<!--            android:layout_width="80dp"-->
+<!--            android:layout_height="80dp"-->
+<!--            android:id="@+id/idGender"-->
+<!--            android:src="@drawable/male"-->
+<!--            android:layout_weight="2"/>-->
+        <LinearLayout
+            android:layout_weight="7"
+            android:layout_marginLeft="20dp"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtSchedule"
+                android:text="schedule"
+                android:textSize="20dp"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtTime"
+                android:text="time"
+                android:textSize="14dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtPrice"
+                android:textColor="#F4970E"
+                android:text="200000"
+                android:textSize="14dp"
+                />
+
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:id="@+id/txtClock"-->
+<!--                android:text="clock"-->
+<!--                android:textSize="14dp"-->
+<!--                />-->
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:id="@+id/txtDate"-->
+<!--                android:text="date"-->
+<!--                android:textSize="14dp"-->
+<!--                />-->
+
+        </LinearLayout>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/purple_700"
+            android:id="@+id/btnRemove"
+            android:text="Remove"
+            android:textColor="@color/white"
+            android:textSize="12dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:gravity="center"/>
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>

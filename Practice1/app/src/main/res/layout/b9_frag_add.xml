@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fragAdd"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/plane"
+        android:layout_gravity="center"/>
+
+    <Spinner
+        android:id="@+id/imgSpinner"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TableLayout
+        android:stretchColumns="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TableRow>
+            <TextView
+                android:text="Schedule:"
+                android:textColor="@color/black"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/edSchedule"
+                android:hint="enter schedule"
+                android:textSize="12dp"/>
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:text="Time:"
+                android:textColor="@color/black"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/edTime"
+                android:hint="enter time"
+                android:textSize="12dp"/>
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:text="Price:"
+                android:textColor="@color/black"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/edPrice"
+                android:hint="enter price"
+                android:textSize="12dp"/>
+        </TableRow>
+<!--        <TableRow>-->
+<!--            <TextView-->
+<!--                android:text="Clock:"-->
+<!--                android:textColor="@color/black"/>-->
+<!--            <EditText-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:id="@+id/edClock"-->
+<!--                android:hint="select time"-->
+<!--                />-->
+<!--        </TableRow>-->
+<!--        <TableRow>-->
+<!--            <TextView-->
+<!--                android:text="Date:"-->
+<!--                android:textColor="@color/black"/>-->
+<!--            <EditText-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:id="@+id/edDate"-->
+<!--                android:hint="enter date"-->
+<!--                />-->
+<!--        </TableRow>-->
+    </TableLayout>
+
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:orientation="horizontal">-->
+
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"/>-->
+<!--        <RadioGroup-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:id="@+id/radioGroup"-->
+<!--            android:orientation="horizontal">-->
+
+<!--            <RadioButton-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:id="@+id/radioBtnMale"-->
+<!--                android:text="Male"/>-->
+<!--            <RadioButton-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:id="@+id/radioBtnFemale"-->
+<!--                android:text="Female"/>-->
+<!--        </RadioGroup>-->
+<!--    </LinearLayout>-->
+
+    <!--    <CheckBox-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:id="@+id/checkbox1"-->
+    <!--        android:text="moto"/>-->
+    <!--    <CheckBox-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:id="@+id/checkbox2"-->
+    <!--        android:text="car"/>-->
+    <!--    <CheckBox-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:id="@+id/checkbox3"-->
+    <!--        android:text="plane"/>-->
+
+    <!--    <RatingBar-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:id="@+id/rating"-->
+    <!--        android:numStars="5"-->
+    <!--        android:rating="1"-->
+    <!--        android:stepSize="1"/>-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/tabbar"
+            android:id="@+id/btnAdd"
+            android:text="Add"
+            android:textSize="14dp"/>
+        <!--            android:layout_marginLeft="20dp"/>-->
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/tabbar"
+            android:id="@+id/btnUpdate"
+            android:text="update"
+            android:textSize="14dp"
+            android:layout_marginLeft="20dp"/>
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycleView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</LinearLayout>

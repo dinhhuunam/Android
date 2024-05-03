@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".b8_MainActivity_DynamicFragment">
+
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="vi du dynamic frag"
+        android:gravity="center"
+        android:textSize="30dp"
+        android:layout_marginTop="20dp"/>
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/btA"
+        android:text="add fragA"
+        android:layout_below="@+id/tv"
+        android:layout_marginTop="10dp"/>
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/btB"
+        android:text="add fragB"
+        android:layout_below="@+id/tv"
+        android:layout_toRightOf="@+id/btA"
+        android:layout_marginTop="10dp"/>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/frame"
+        android:layout_below="@id/btA"
+        android:layout_marginTop="20dp"/>
+</RelativeLayout>

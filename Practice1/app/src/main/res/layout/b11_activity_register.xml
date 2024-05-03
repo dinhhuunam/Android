@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".b11_RegisterActivity"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="REGISTER FORM"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:layout_marginTop="60dp"
+        android:gravity="center"/>
+
+    <TableLayout
+        android:stretchColumns="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TableRow>
+            <TextView
+                android:text="Username:"
+                android:textColor="@color/black"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/username"
+                android:hint="enter schedule"
+                android:textSize="12dp"/>
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:text="Password:"
+                android:textColor="@color/black"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/password"
+                android:hint="enter time"
+                android:textSize="12dp"/>
+        </TableRow>
+    </TableLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:layout_width="120dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="70dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/tabbar"
+            android:id="@+id/btnCancel"
+            android:text="CANCEL"
+            android:textSize="12dp"/>
+        <!--            android:layout_marginLeft="20dp"/>-->
+        <Button
+            android:layout_width="120dp"
+            android:layout_marginTop="20dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/tabbar"
+            android:id="@+id/btnRegister"
+            android:text="REGISTER"
+            android:textSize="12dp"
+            android:layout_marginLeft="20dp"/>
+    </LinearLayout>
+
+</LinearLayout>

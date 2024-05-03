@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">Practice1</string>
+    <string-array name="country">
+        <item>Viet nam</item>
+        <item>Lao</item>
+        <item>Campuchia</item>
+    </string-array>
+    <string-array name="category">
+        <item>Mua sam</item>
+        <item>Tien an</item>
+        <item>Tien nha</item>
+        <item>Tien dien</item>
+        <item>Tien nuoc</item>
+        <item>Di lai</item>
+    </string-array>
+    <string-array name="album">
+        <item>Cho mot tinh yeu</item>
+        <item>Noi yeu be dai</item>
+        <item>Cay lang - gio ngung</item>
+        <item>Co dung duoc khong</item>
+        <item>Day la mo</item>
+        <item>O giua cuoc doi</item>
+    </string-array>
+    <string-array name="type">
+        <item>Country</item>
+        <item>Blues</item>
+        <item>Rock</item>
+        <item>Pop</item>
+    </string-array>
+</resources>
